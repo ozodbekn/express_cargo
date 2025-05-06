@@ -55,7 +55,7 @@ const BookSchema = new Schema(
         return this.isMarried;
       },
       name: String,
-      age: Number,
+      age: { type: Number },
     },
   },
   { versionKey: false, timestamps: true, toJSON: { getters: true } }
